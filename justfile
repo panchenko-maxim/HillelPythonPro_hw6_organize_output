@@ -7,10 +7,10 @@
 # Plugin: https://plugins.jetbrains.com/plugin/18658-just
 #
 
-import 'just/dev.just'
+#import 'just/dev.just'
 import 'just/homework.just'
-import 'just/environment.just'
-import 'just/other.just'
+#import 'just/environment.just'
+#import 'just/other.just'
 
 # List of all commands
 [private]
