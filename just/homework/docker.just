@@ -19,22 +19,22 @@ d-up:
 #          --watch
 
 # Run app. For interact with app in "interactive" mode with "tty" enabled.
-d-run-i-app:
-    @export user_id={{ user_id }} &&\
-    export project_workdir={{ project_workdir }} &&\
-    COMPOSE_DOCKER_CLI_BUILD=1 DOCKER_BUILDKIT=1 \
-    	docker compose \
-            run \
-            --rm --build \
-            app
+#d-run-i-app:
+#    @export user_id={{ user_id }} &&\
+#    export project_workdir={{ project_workdir }} &&\
+#    COMPOSE_DOCKER_CLI_BUILD=1 DOCKER_BUILDKIT=1 \
+#    	docker compose \
+#            run \
+#            --rm --build \
+#            app
 
 # Build services
-d-build:
-    @export user_id={{ user_id }} &&\
-    export project_workdir={{ project_workdir }} &&\
-    COMPOSE_DOCKER_CLI_BUILD=1 DOCKER_BUILDKIT=1 \
-    	docker compose \
-    		build
+#d-build:
+#    @export user_id={{ user_id }} &&\
+#    export project_workdir={{ project_workdir }} &&\
+#    COMPOSE_DOCKER_CLI_BUILD=1 DOCKER_BUILDKIT=1 \
+#    	docker compose \
+#    		build
 
 # Purge all data related with services
 d-purge:
@@ -46,8 +46,8 @@ d-purge:
     	    --volumes --remove-orphans --rmi local --timeout 0
 
 # Get information about current compose configuration
-d-compose-inspect:
-    @export user_id={{ user_id }} &&\
-    export project_workdir={{ project_workdir }} &&\
-    COMPOSE_DOCKER_CLI_BUILD=1 DOCKER_BUILDKIT=1 \
-    	docker compose config
+#d-compose-inspect:
+#    @export user_id={{ user_id }} &&\
+#    export project_workdir={{ project_workdir }} &&\
+#    COMPOSE_DOCKER_CLI_BUILD=1 DOCKER_BUILDKIT=1 \
+#    	docker compose config
