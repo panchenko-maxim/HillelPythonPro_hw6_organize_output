@@ -1,6 +1,6 @@
-def main():
-    print("Hello from hw-6-organize-output!")
-
+from app import main
 
 if __name__ == "__main__":
     main()
+
+
